@@ -1,0 +1,13 @@
+{
+  "name": "Meh button for Facebook",
+  "icons" : {
+  	"48" : "icon.png"
+  },
+  "version": "1.0",
+  "description": "Adds a 'meh' button after 'like' buttons in the stream.",
+   "content_scripts": [ {
+      "js": [ "doc_end.js" ],
+      "matches": [ "http://www.facebook.com/" ],
+      "run_at": "document_end" }
+  ]
+}
